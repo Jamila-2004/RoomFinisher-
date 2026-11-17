@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A-102 · Room Finisher — Revit Add-In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+.hero{padding:2.6rem 0 1rem}
+.pipe{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-family:var(--mono);font-size:.75rem;color:var(--ink2);margin-top:1.2rem}
+.pipe b{color:var(--ink);background:var(--card);border:1px solid var(--line);padding:.32rem .6rem;border-radius:8px;font-weight:500}
+.pipe span{color:var(--rust)}
+section.page{padding:1.6rem 0 3rem}
+.feat{border-top:3px solid var(--rust);padding:1.1rem 1.1rem 1.2rem}
+.feat h3{font-size:.98rem}
+.feat p{font-size:.82rem;margin:0}
+.feat .n{font-family:var(--mono);font-size:.68rem;color:var(--mut);letter-spacing:1px}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid var(--line2);background:#000}
+.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.note{font-size:.78rem;color:var(--mut);margin-top:.6rem}
+</style>
+</head>
+<body class="gridbg">
+
+<nav class="top"><div class="nav-in">
+  <div class="mark">Room Finisher <span>·</span> A-102</div>
+  <div class="crumbs"><a href="../../index.html">← Portfolio</a></div>
+</div></nav>
+
+<div class="wrap">
+
+<section class="hero">
+  <div class="eyebrow">A-102 · C# · WPF · Revit API</div>
+  <h1>Every room in the model,<br><span class="hl">as one editable schedule.</span></h1>
+  <p class="sub">A production-quality Revit 2025/2026 add-in that loads every room into an
+    editable, Excel-like schedule — bulk edit, templates, validation, analytics, and an AI
+    finish assistant — then pushes every change back to the model in a single transaction.</p>
+  <div class="pipe"><b>Load all rooms</b><span>→</span><b>Edit in schedule</b><span>→</span><b>Validate</b><span>→</span><b>One transaction to Revit</b></div>
+</section>
+
+<section class="page">
+  <span class="eyebrow">Features</span>
+  <h2 style="margin-top:.5rem">What the add-in does</h2>
+  <div class="g3" style="margin-top:.9rem">
+    <div class="card feat"><div class="n">01 · Schedule</div><h3>Excel-like editing</h3><p>Every room loads into an editable grid, with bulk edit across many rooms at once.</p></div>
+    <div class="card feat"><div class="n">02 · Templates</div><h3>Templates &amp; validation</h3><p>Apply finish templates and check the results for errors before anything touches the model.</p></div>
+    <div class="card feat"><div class="n">03 · Analytics</div><h3>Analytics</h3><p>Summaries of finishes across the project, so you can review the whole building at a glance.</p></div>
+    <div class="card feat"><div class="n">04 · AI</div><h3>AI finish assistant</h3><p>Claude / Gemini assist with finish suggestions, with the architect staying in the loop.</p></div>
+    <div class="card feat"><div class="n">05 · Write-back</div><h3>Single transaction</h3><p>All changes are pushed back to Revit together, so one Undo reverses the whole batch.</p></div>
+    <div class="card feat"><div class="n">06 · Architecture</div><h3>Modeless WPF + ExternalEvent</h3><p>MVVM design on .NET 8. The window stays open while you keep working in Revit.</p></div>
+  </div>
+</section>
+
+<section class="page">
+  <span class="eyebrow">Demo Video</span>
+  <h2 style="margin-top:.5rem">Workflow demonstration</h2>
+
+  <!-- OPTION A: YouTube / Vimeo. Replace YOUR_VIDEO_ID, or delete this block. -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Room Finisher demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- OPTION B: self-hosted MP4 (keep under ~25 MB). Uncomment and delete Option A.
+  <div class="video">
+    <video controls preload="metadata" poster="media/poster.jpg">
+      <source src="media/demo.mp4" type="video/mp4">
+    </video>
+  </div>
+  -->
+  <p class="note">Video not loading? Replace YOUR_VIDEO_ID with your video's ID.</p>
+</section>
+
+<section class="page" style="padding-top:0">
+  <div class="titleblock">
+    <div class="tb-row">
+      <div class="tb-cell"><span class="k">Project</span><span class="v">Room Finisher</span></div>
+      <div class="tb-cell"><span class="k">Sheet</span><span class="v">A-102</span></div>
+      <div class="tb-cell"><span class="k">Platform</span><span class="v">Revit 2025 / 2026</span></div>
+    </div>
+    <div class="tb-row">
+      <div class="tb-cell"><span class="k">Stack</span><span class="v">C# · .NET 8 WPF · MVVM</span></div>
+      <div class="tb-cell"><span class="k">API</span><span class="v">Revit API · ExternalEvent</span></div>
+      <div class="tb-cell"><span class="k">AI</span><span class="v">Claude / Gemini assist</span></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer class="site">Gamila Wael · Computational Design Portfolio · A-102 Room Finisher</footer>
+
+</body>
+</html>
